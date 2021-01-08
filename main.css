@@ -9,7 +9,6 @@
 
 body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 header {
@@ -84,16 +83,14 @@ p {
 
   padding: 0 10vw;
   margin: -10px 0;
+  overflow: hidden;
 }
 
 .item-left {
-  margin: auto;
   transform: rotate(5deg);
 }
 
 .item-right {
-
-  margin: auto;
   transform: rotate(-5deg);
 }
 
