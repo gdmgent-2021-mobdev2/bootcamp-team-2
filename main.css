@@ -43,6 +43,19 @@ p {
   font-size: x-large;
 }
 
+.info-head {
+  color: white;
+  font-size: x-large;
+  padding-bottom: 5px;
+}
+
+.info {
+  color: white;
+  width: 30vw;
+  margin: auto;
+  font-size: large;
+}
+
 .white {
   color: white;
 }
@@ -128,5 +141,10 @@ p {
   }
   h1 {
     font-size: x-large;
+  }
+  .info {
+    color: white;
+    width: 90%;
+    margin: auto;
   }
 }
