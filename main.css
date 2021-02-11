@@ -1,10 +1,10 @@
 * {
   padding: 0;
   margin: 0;
-  color: #ff9513;
+  color: #273a7c;
   font-size: 0;
   text-align: center;
-  font-family: 'Caveat', cursive;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -22,7 +22,7 @@ header {
 
 footer {
   height: 5vh;
-  background-color: #ff9513;
+  background-color: #273a7c;
   color: white;
   display: flex;
   justify-content: center;
@@ -31,6 +31,9 @@ footer {
 
 h1 {
   font-size: xx-large;
+}
+h3 {
+  font-size: x-large;
 }
 
 span,
@@ -60,12 +63,13 @@ p {
   color: white;
 }
 
-.orange {
-  background-color: #ff9513;
+.blue {
+  background-color: #273a7c;
 }
 
 .logo {
-  width: 40vw;
+  padding-top: 5vh;
+  height: 30vh;
 }
 
 .h-40 {
@@ -90,33 +94,20 @@ p {
 
 .container {
   display: flex;
-  position: relative;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 
   padding: 0 10vw;
-  margin: -10px 0;
-  overflow: hidden;
-}
-
-.item-left {
-  transform: rotate(5deg);
-}
-
-.item-right {
-  transform: rotate(-5deg);
+  margin-bottom: -2px;
 }
 
 .text-right {
   width: 50%;
-  padding: 30px 0;
-  margin: auto;
 }
 
 .text-left {
-  padding: 30px 0;
   width: 50%;
-  margin: auto;
 }
 
 .rotate {
@@ -125,16 +116,25 @@ p {
 
 @media only screen and (max-width: 768px) {
   .text-right {
-    width: 100%;
-    padding: 30px 0;
-    margin: auto;
+    width: 100vw;
+    padding: 20px 0;
   }
   
   .text-left {
-    padding: 30px 0;
-    width: 100%;
-    margin: auto;
+    width: 100vw;
+    padding: 20px 0;
   }
+
+  .item-right {
+    max-width: 80vw;
+    height: auto;
+  }
+  
+  .item-left {
+    max-width: 80vw;
+    height: auto;
+  }
+
   .intro {
     width: 90%;
     font-size: large;
@@ -142,9 +142,8 @@ p {
   h1 {
     font-size: x-large;
   }
-  .info {
-    color: white;
-    width: 90%;
-    margin: auto;
+
+  h3 {
+    font-size: large;
   }
 }
